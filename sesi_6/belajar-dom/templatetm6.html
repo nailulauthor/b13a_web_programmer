@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas Mandiri 6</title>
+</head>
+
+<body>
+
+    <p class="paragraf" id="text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p class="paragraf" id="text-color1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+    <p class="paragraf" id="text-color2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quo quaerat recusandae qui ullam eaque cumque ea fugit,
+        debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+        maiores in?</p>
+
+
+    <script>
+       myInterval = setInterval (setColor, 500);
+
+       function setColor(){
+        let x = document.getElementById("text-color")
+        let x1 = document.getElementById("text-color1")
+        let x2 = document.getElementById("text-color2")
+        x.style.color = x.style.color == "red"? "black" : "red"
+        x1.style.color = x1.style.color == "green"? "black" : "green"
+        x2.style.color = x2.style.color == "blue"? "black" : "blue"
+       }
+    </script>
+
+</body>
+
+</html>

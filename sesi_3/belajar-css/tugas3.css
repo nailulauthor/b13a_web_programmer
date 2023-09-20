@@ -71,8 +71,9 @@ margin: 10px
 }
 
 .action button {
-border: solid;
+  border: none;
 border-radius: 20%;
+height: 20px;
 }
 
 #detail {

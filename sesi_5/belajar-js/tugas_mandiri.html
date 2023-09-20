@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Looping</title>
+    <style>
+        .rata {
+            display: flex;
+            text-indent: 10px;
+        }
+        .rata ul{
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <form action="#">
+            <tr>
+                <td>
+                   Text
+                </td>
+                <td>
+                    <input type="text" name="" id="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                        Number
+                </td>    
+                <td>
+                    <input type="number" name="" id="number"><br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="tampilkan()">Tampilkan</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+    <hr>
+    <div class="rata">
+        <ol id="hasil">
+        </ol>
+        <ul style="list-style-type: square;" id="hasil2"></ul>
+    </div>
+    <script>
+
+        function tampilkan() {
+            const angka = document.getElementById("number").value
+            var datakalimat = document.getElementById("text").value
+            var hasil = document.getElementById("hasil")
+            var hasil2 = document.getElementById("hasil2")
+            for (let tampil = 1; tampil <= angka; tampil++) {
+                hasil.innerHTML += `<li>${datakalimat}</li>`
+            }
+
+            tampil2 = 1
+            while (tampil2 <= angka) {
+                hasil2.innerHTML += `<li>${datakalimat}</li>`
+                tampil2++
+            }
+            
+        }
+
+    </script>
+</body>
+
+</html>
